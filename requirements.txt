@@ -1,8 +1,9 @@
 # ----------------------
 # Flask
 # ----------------------
-flask
+Flask==1.0.2
 Flask-WTF
+#Jinja2==2.10
 Flask-SQLAlchemy
 Flask-Migrate
 Flask-Script
@@ -12,4 +13,4 @@ psycopg2
 # ----------------------
 # Production Server
 # ----------------------
-gunicorn
+gunicorn==19.9.0

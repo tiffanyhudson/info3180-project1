@@ -5,8 +5,9 @@
     <br>
     <h1> Add Profile</h1>
     <br>
-    <form action="{{url_for('profile')}}" method="post">
-        {{ form.csrf_token }}
+    <form action="{{url_for('Addprofile')}}" method="post">
+        {{ form.hidden_tag('self') }}
+        
         <div class="form-group">
             {{ form.first_name.label }} <p> First Name</p> {{ form.first_name(class="form-control") }}
         </div>

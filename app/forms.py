@@ -1,10 +1,10 @@
-from flask_wtf import FlaskForm
+from flask import render_template, request, redirect, url_for, flash 
+from flask_wtf import FlaskForm 
+from flask_wtf.file import FileField, FileRequired, FileAllowed
+from wtforms import StringField, SelectField, TextAreaField, FileField
+from wtforms.validators import DataRequired, Email
 
-from wtforms import StringField, SelectField, FileField, TextAreaField
-
-from wtforms.validators import DataRequired, Email, FileRequired , FileAllowed
-
-class ProfileForm(FlaskForm):
+class profile(FlaskForm):
 
     firstname = StringField('first_name', validators=[DataRequired()])
     
